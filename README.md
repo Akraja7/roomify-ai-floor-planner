@@ -1,87 +1,77 @@
-# Welcome to React Router!
+# 🏠 Roomify — AI Floor Plan Visualizer
 
-A modern, production-ready template for building full-stack React applications using React Router.
+An AI-powered full-stack web app that transforms architectural floor plans 
+into photorealistic room visualizations. Upload any floor plan image and 
+watch AI render it into a fully furnished, detailed interior layout.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+> Built with React, TypeScript, and Puter.js — deployed for free with zero backend cost.
 
-## Features
+## 📸 Screenshots
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+### Landing Page
+![Homepage](screenshots/roomify_1_homepage.png)
 
-## Getting Started
+### AI Visualizer — Rendered Floor Plan
+![Visualizer](screenshots/roomify_4_visualizer.png)
+
+### Exported Render Result
+![Rendered](screenshots/roomify_5_rendered.png)
+
+### Upload Screen
+![Upload](screenshots/roomify_2_upload.png)
+
+## ✨ Features
+
+- 🖼️ Upload any floor plan image (JPG, PNG, up to 50MB)
+- 🤖 AI renders the floor plan into a photorealistic furnished layout
+- 🔍 Interactive visualizer with zoom in/out and pan controls
+- 📤 Export and share your rendered design
+- 🔐 User authentication via Puter.js
+- ☁️ Cloud file storage — no backend server needed
+- 📱 Clean, responsive UI with a professional design system
+
+## 🛠️ Tech Stack
+
+| Layer | Tech |
+|-------|------|
+| Frontend | React, TypeScript, React Router |
+| AI Rendering | Puter.js AI APIs |
+| Auth & Storage | Puter.js (cloud filesystem) |
+| Styling | CSS / Tailwind |
+| Deployment | Puter.site (free hosting) |
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+
+- A free [Puter](https://puter.com) account
 
 ### Installation
 
-Install the dependencies:
-
 ```bash
+git clone https://github.com/Akraja7/roomify-ai-floor-planner.git
+cd roomify-ai-floor-planner
 npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+Open `http://localhost:5173` in your browser.
 
-## Building for Production
+### Deployment
 
-Create a production build:
-
+This app deploys for free on Puter.site with no backend required:
 ```bash
 npm run build
+# Deploy the dist/ folder to Puter.site
 ```
 
-## Deployment
+## 🔮 Future Plans
 
-### Docker Deployment
+- [ ] Multiple rendering styles (modern, classic, minimalist)
+- [ ] Room-by-room breakdown and furniture suggestions
+- [ ] Collaborative sharing with live preview links
+- [ ] Mobile app version
 
-To build and run using Docker:
+## 📄 License
 
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+MIT License
